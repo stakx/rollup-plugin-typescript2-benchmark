@@ -15,7 +15,7 @@ async function bundle() {
 }
 
 const rimraf = require('rimraf');
-rimraf.sync('.rpt2_cahe');
+rimraf.sync('.rpt2_cache');
 
 bundle().then(function() {
     const hrstart = process.hrtime();
